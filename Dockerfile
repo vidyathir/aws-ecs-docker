@@ -1,6 +1,6 @@
-FROM --platform=linux/amd64 node:18-alpine
+FROM  node:18-alpine
 WORKDIR /app
 COPY . .
-RUN yarn install
+RUN npm install
 CMD ["node", "index.js"]
 EXPOSE 3000
